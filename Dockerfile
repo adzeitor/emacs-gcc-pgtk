@@ -51,6 +51,7 @@ RUN ./autogen.sh && ./configure \
     --without-xwidgets \
     --without-xaw3d \
     --with-mailutils \
+    --with-xinput2 \
     CFLAGS="-O2 -pipe"
 
 RUN make NATIVE_FULL_AOT=1 -j $(nproc)
